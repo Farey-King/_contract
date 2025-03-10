@@ -1,13 +1,5 @@
-## Foundry
+The AjorNFT contract is an on-chain NFT smart contract built using Solidity and OpenZeppelin’s ERC-721 standard. It allows users to contribute ETH and automatically receive a unique, dynamically generated NFT as proof of their participation. The contract ensures all metadata and images are stored fully on-chain, eliminating the need for IPFS or external storage.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
 ## Documentation
 
