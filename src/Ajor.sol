@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import "lib/openzeppelin-contracts/contracts/utils/Strings.sol";
-import "lib/openzeppelin-contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract AjorNFT is ERC721 {
     using Strings for uint256;
@@ -34,7 +34,7 @@ contract AjorNFT is ERC721 {
         isMinted[user] = true;
         tokenIdAjor++;
 
-        emit MintedNFT(user, tokenId);
+        emit MintedNFT(user, tokenId); //  Now `tokenId` is properly defined
     }
 
     // /// @notice Generates metadata dynamically and returns it as Base64 JSON
@@ -71,5 +71,3 @@ contract AjorNFT is ERC721 {
         return string(abi.encodePacked(data)); // Replace with a real Base64 encoding library
     }
 }
-
-;
